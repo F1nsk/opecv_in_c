@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.11)
+project(opencv_in_c)
+find_package(OpenCV 3 REQUIRED)
+add_executable(opencv_in_c src/main.c)
+target_link_libraries(opencv_in_c ${OpenCV_LIBS})
